@@ -1,0 +1,64 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.load {
+	animation: slide 1s;
+}
+
+.slider {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100vh;
+	animation: slide 120s linear infinite 0s;
+	animation-timing-function: ease-in-out;
+}
+
+.content {
+	color: #fff;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.principal {
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	letter-spacing: 5px;
+	text-align: center;
+	font-family: serif;
+}
+
+.principal h1 {
+	font-size: 70px;
+	margin-bottom: 20px;
+}
+
+.principal h2 {
+	font-size: 20px;
+}
+
+/* NO FUNCIONA EN MOZILLA */
+
+@keyframes slide {
+	0% {
+		background-image: url("img/bckg1_20180310.jpg");
+	}
+	25% {
+		background-image: url("img/bckg2_20180310.jpg");
+	}
+	50% {
+		background-image: url("img/bckg3_20180310.jpg");
+	}
+	75% {
+		background-image: url("img/bckg4_20180310.jpg");
+	}
+	100% {
+		background-image: url("img/bckg5_20180310.jpg");
+	}
+}
